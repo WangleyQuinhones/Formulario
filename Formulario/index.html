@@ -2,9 +2,8 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <link rel="stylesheet" type="text/Css" href="index.css" media="screen">
+    <meta name="viewport" content="width=device=width, inicialscale=1.0">
+    <link rel="stylesheet" type="text/Css" href="index.css" >
 
     <title>Cadastro</title>
 </head>
@@ -18,7 +17,7 @@
 
   <form>
     <fieldset class="grupo">
-        <div>
+        <div class="campo">
             <label for="Nome"><strong>Nome</strong></label>
             <input type="text" name="Nome" id= "Nome" required>
         </div>
@@ -26,24 +25,28 @@
         <div class="campo">
           <label for="Sobrenome"><strong>Sobrenome</strong></label>
           <input type="text" name="Sobrenome"id= "Sobrenome" required>
-        </div>
+       </div>
     </fieldset>
 
     <div class="campo">
-      <label for="email"><strong>email</strong></label>
+      <label for="email"><strong>Email</strong></label>
       <input type="email" name="email" id="email" required>
     </div>
 
     <div class="campo">
       <label><strong>Qual linguagem você desenvolve?</strong></label>
       <label>
-        <input type="radio" name="devweb" value="fullstack">Fullstack
+        <input type="radio" name="devweb" value="fullstack" checked>Fullstack
+      </label>
+      <label>
         <input type="radio" name="devweb" value="frontend">Front-end
+      </label>
+      <label>
         <input type="radio" name="devweb" value="backend">Back-end
       </label>
     </div>
 
-    <div>
+    <div class="campo">
       <label for="Senioridade"><strong>Senioridade</strong></label>
       <select id="Senioridade">
         <option selected disabled value="">Selecione</option>
@@ -52,11 +55,10 @@
         <option>Pleno</option>
         <option>Senior</option>
       </select>
-    </div>
-    <br>
+    </div>    
 
     <fieldset class="grupo">
-        <div>
+        <div id="check">
             <label><strong>Selecione as tecnologias que utliliza:</strong></label><br><br>
             <input type="checkbox" name="tecnologia1" id="tecnologia1" value="Ruby">
             <label for="tecnologia1">Ruby</label>
@@ -76,13 +78,15 @@
         </div>
     </fieldset>
 
-    <div>
+    <div class="campo">
       <br>
       <label><strong>Descreva aqui sua experiência na tecnologia:</strong></label>
-      <textarea rows="6" style="width: 26em" id="experiência" name="experiência"></textarea>    
-    </div>
+      <textarea row="8" style="width: 26em" id="experiência" name="experiência"></textarea>          
 
-    <button class="botao" type="submit">Enviar</button>
+    </div>   
+
+    <button class=botao type="submit">Enviar</button>
+
   </form>  
 
 </body>
